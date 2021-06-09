@@ -37,6 +37,7 @@ body {
     height: 24px;
     display: flex;
     margin-bottom: 40px;
+    line-height: 24px;
 
     font-size: 16px;
     color:rgba(0, 0, 0, 0.48);
@@ -48,16 +49,18 @@ body {
     display: flex;
     height: 16px;
     margin-bottom: 8px;
+    line-height: 16px;
 
     font-size: 10px;
     letter-spacing: 1.5px;
     color: rgba(0, 0, 0, 0.48);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .company {
     display: flex;
     justify-content:space-between;
+    margin-bottom: 40px;
 
     font-size: 16px;
     line-height: 24px;
@@ -96,3 +99,25 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.table-of-items {
+    width: 100%;
+}
+
+.table-names {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-item-size {
+    width: calc(50% - 12px);
+}
+
+.table-names-size {
+    width: 65px;
+    text-align: right;
+}
+
