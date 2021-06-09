@@ -7,8 +7,10 @@ body {
 }
 .wrapper {
     position: relative;
-    width: 726px;
-    height: 1024px;
+    max-width: 726px;
+    min-width: 300px;
+    min-height: 600px;
+    padding: 56px 32px 75px;
     margin: 0 auto;
 
     background-color: #ffffff;
@@ -16,82 +18,83 @@ body {
     box-shadow: 64px 64px 64px rgba(0, 0, 0, 0.1);
 }
 
-.number {
-    margin: 0 auto;
-    position: absolute;
-    top: 56px;
-    left: 32px;
-    right: 375px;
+.header {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 8px;
+}
+
+.invoice-number {
+    height: 35px;
+    line-height: 40px;
+
     font-size: 30px;
-    font-weight: normal;
-    line-height: 41px;
-    letter-spacing: -0.01em;
+    font-weight: 300;
+    letter-spacing: -0.02em;
 }
 
-.data {
-    margin: 0 auto;
-    position: absolute;
-    top: 99px;
-    left: 32px;
-    width: 662px;
+.invoice-data {
     height: 24px;
+    display: flex;
+    margin-bottom: 40px;
+
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.48);
+    color:rgba(0, 0, 0, 0.48);
     letter-spacing: -0.01em;
+    
 }
 
-.pic1 {
-    position: absolute;
-    top: 56px;
-    left: 609px;
-    right: 32px;
-}
-
-.bill {
-    position: absolute;
-    top: 163px;
-    left: 32px;
-    right: 433px;
+.block-names-text {
+    display: flex;
     height: 16px;
+    margin-bottom: 8px;
 
-    font-weight: bold;
     font-size: 10px;
-    line-height: 16px;
     letter-spacing: 1.5px;
     color: rgba(0, 0, 0, 0.48);
+    font-weight: bold;
 }
 
-.company1 {
-    position: absolute;
-    top: 187px;
-    left: 32px;
-    right: 375px;
-    height: 96px;
-    width: 319px;
+.company {
+    display: flex;
+    justify-content:space-between;
+
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
-    text-align: left;
 }
 
-.text {
-    margin: 0px auto;
+.company-left {
+    width: calc(50% - 12px);        
 }
 
-.company2 {
-    position: absolute;
-    top: 187px;
-    right: 32px;
-    left: 375px;
-    height: 96px;
-    width: 319px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.01em;
+.company-right {
+    width: calc(50% - 12px);
+}
+
+.company-left > p:first-child {
+    font-weight: 700;
+}
+
+.company-left > p {
+    margin: 0px;
+}
+
+.company-right {
     text-align: right;
 }
 
-.tel {
-    text-decoration: none;
-    color: #000000;
+.company-right > p {
+    margin: 0px;
 }
+
+.company-right > p:first-child {
+    font-weight: 700;
+}
+
+.tel-number {
+    text-decoration: none;
+    color: black;
+}
+
+
