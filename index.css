@@ -107,7 +107,7 @@ body {
 .table-names {
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 18px;
+    margin: 0px 0px 16px;
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -119,5 +119,24 @@ body {
 .table-names-size {
     width: 65px;
     text-align: right;
+}
+
+
+.table-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 24px;
+    
+}
+
+.item-description {
+    font-size: 12px;
+}
+
+td > p {
+    margin: 0;
 }
 
